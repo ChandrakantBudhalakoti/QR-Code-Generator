@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>QR Code Generator</h1>
+      <form id="qrForm">
+        <div class="input-group">
+          <input
+            type="text"
+            id="linkInput"
+            placeholder="Enter your link here..."
+            required
+          />
+          <button type="button" class="clear-button" id="clearBtn">
+            Clear
+          </button>
+        </div>
+        <button type="submit" class="button">Generate QR Code</button>
+      </form>
+      <div id="qrCodeContainer"></div>
+      <a id="downloadBtn" class="button hidden">Download QR Code</a>
+    </div>
+    <footer>&copy; 2024 Chetan Budhalakoti</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
